@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitra Novriadi - Portofolio</title>
+    <style type="text/css">
+    body{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141214;
+        background-image: url(Illustration-6.jpg);
+    }   
+    .container{
+        
+        width: 80%;
+        background: transparent;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .judul{
+        width: 100%;
+        height: 50%;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+        margin-top: 20%;
+        margin-bottom: 50%;
+    }
+    .pas_foto{
+        width: 50%;
+        height: 50%;
+        float: left;
+        clear: both;
+        background: transparent;
+    }
+    .biodata{
+        width: 50%;
+        height: 50%;
+        float: right;
+        margin-right: auto;
+        margin-left: auto;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+    }
+    .isi_biodata{
+        padding: 5px;
+    }
+    .isi_pendidikan{
+        padding: 5px;
+        text-align: center;
+    }
+    .foto_pendidikan{
+        width: 50%;
+        height: 50%;
+        float: left;
+        clear: both;
+        background: transparent;
+    }
+    .pendidikan{
+        width: 50%;
+        height: 50%;
+        float: right;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40%;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+    }
+    .isi_pekerjaan{
+        padding: 5px;
+        text-align: center;
+    }
+    .pekerjaan{
+        width: 50%;
+        height: 50%;
+        float: left;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40%;
+        clear: both;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+    }    
+    .foto_pekerjaan{
+        width: 50%;
+        height: 50%;
+        float: right;
+        background: transparent;
+    }
+    .isi_organisasi{
+        padding: 5px;
+    }
+    .foto_organisasi{
+        width: 50%;
+        height: 50%;
+        float: left;
+        clear: both;
+        background: transparent;
+    }    
+    .organisasi{
+        width: 50%;
+        height: 50%;
+        float: right;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40%;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+    }  
+    .kekurangan-kelebihan{
+        width: 100%;
+        height: 50%;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+        margin-top: 70%;
+        margin-bottom: 20%;
+        clear: both;
+        padding-top: 65%;
+    } 
+    .keahlian-sertifikasi{
+        width: 100%;
+        height: 50%;
+        text-shadow: 0 15px 15px rgba(128, 0, 128, 0.411);
+        margin-top: 30%;
+        margin-bottom: 20%;
+        clear: both;
+    } 
+    .footer{
+        width: 100%;
+        height: 50%;
+        clear: both;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 100%;
+        color: white;
+    }
+    .clear{
+        clear: both;
+    }
+    .img_biodata{
+        height: 600px;
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        box-shadow: 0 5px 10px rgba(167, 14, 159, 0.445);
+        margin-left: auto;
+        margin-right: 100px;
+        margin-top: 5%;
+    }
+    .img_pendidikan{
+        height: 500px;
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+        border-radius: 10%;
+        box-shadow: 0 5px 10px rgba(167, 14, 159, 0.445);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        margin-top: 80%;
+    }   
+    .img_pekerjaan{
+        height: 500px;
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+        border-radius: 10%;
+        box-shadow: 0 5px 10px rgba(167, 14, 159, 0.445);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        margin-top: 80%;
+    }  
+    .img_organisasi{
+        height: 500px;
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+        border-radius: 10%;
+        box-shadow: 0 5px 10px rgba(167, 14, 159, 0.445);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        margin-top: 80%;
+    }  
+    button{
+        width: 50%;
+        height: 20%;
+        background: linear-gradient(rgb(255, 98, 255),rgb(70, 3, 70));
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 25%;
+        font-weight: bold;
+        color: white;
+    }
+    .marquee-top{
+        width: 100vw;
+        height: 40px;
+        min-width: 0;
+        background-color: #8e21a3;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        left: 0%;
+        right: 0%;
+        overflow: hidden;
+        transform: rotate(0);
+    }
+    .marquee-bottom {
+        width: 100vw;
+        height: 40px;
+        min-width: 0;
+        background-color: #8e21a3;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0%;
+        right: 0%;
+        overflow: hidden;
+        transform: rotate(180deg);
+    }
+    .marquee-left {
+        width: 40px;
+        height: 100vh;
+        min-width: 0;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        background-color: #8e21a3;
+        flex-direction: column;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        justify-content: flex-start;
+        align-self: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: auto;
+        overflow: hidden;
+        transform: rotate(0);
+    }
+    .marquee-right {
+        width: 40px;
+        height: 100vh;
+        min-width: 0;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        background-color: #8e21a3;
+        flex-direction: column;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        justify-content: flex-start;
+        align-self: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        left: auto;
+        right: 0%;
+        overflow: hidden;
+        transform: rotate(0);
+    }
+    .menu{
+        list-style: none;
+    }
+    .isimenu{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    li{
+        font-size: 130%;
+        font-family: 'Courier New', Courier, monospace;  
+    }
+    </style>
+</head>
+<body>
+<div class="marquee-top">
+    <font style="font-size: 125%; color: white;">
+        ..-. .. - .-. .- / -. --- ...- .-. .. .- -.. .. --..-- ... .- -.-- .- / -- . -. .--- .- -.. .. / ... . -. .. -- .- -. / -.. .- .-. .. / ..--- ----- ..--- ...-- / ... . -... .- --. .- .. / ..-. .-. . . .-.. .- -. -.-. . / .. .-.. ..- ... - .-. .- - --- .-. --..-- / -.- --- -- .. -.- ..- ... --..-- / -.. .- -. / .--. . -. ..- .-.. .. ... .-.-.-
+    </font>
+</div>
+<div class="marquee-bottom">
+    <font style="font-size: 125%; color: white;">
+        ..-. .. - .-. .- / -. --- ...- .-. .. .- -.. .. --..-- ... .- -.-- .- / -- . -. .--- .- -.. .. / ... . -. .. -- .- -. / -.. .- .-. .. / ..--- ----- ..--- ...-- / ... . -... .- --. .- .. / ..-. .-. . . .-.. .- -. -.-. . / .. .-.. ..- ... - .-. .- - --- .-. --..-- / -.- --- -- .. -.- ..- ... --..-- / -.. .- -. / .--. . -. ..- .-.. .. ... .-.-.-
+    </font>
+</div>
+<div class="marquee-left">
+    <font style="font-size: 125%; color: white;">
+        ..-. .. - .-. .- / -. --- ...- .-. .. .- -.. .. --..-- ... .- -.-- .- / -- . -. .--- .- -.. .. / ... . -. .. -- .- -. / -.. .- .-. .. / ..--- ----- ..--- ...-- / ... . -... .- --. .- .. / ..-. .-. . . .-.. .- -. -.-. . / .. .-.. ..- ... - .-. .- - --- .-. --..-- / -.- --- -- .. -.- ..- ... --..-- / -.. .- -. / .--. . -. ..- .-.. .. ... .-.-.-
+    </font>
+</div>
+<div class="marquee-right">
+    <font style="font-size: 125%; color: white;">
+        ..-. .. - .-. .- / -. --- ...- .-. .. .- -.. .. --..-- ... .- -.-- .- / -- . -. .--- .- -.. .. / ... . -. .. -- .- -. / -.. .- .-. .. / ..--- ----- ..--- ...-- / ... . -... .- --. .- .. / ..-. .-. . . .-.. .- -. -.-. . / .. .-.. ..- ... - .-. .- - --- .-. --..-- / -.- --- -- .. -.- ..- ... --..-- / -.. .- -. / .--. . -. ..- .-.. .. ... .-.-.-
+    </font>
+</div>
+<div class="container">
+    <div class="judul">
+        <p align="center"><font style="font-weight: normal; font-size: 150%; color: white; font-family: 'courier new', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Hi, im Fitra
+        </font></p>
+        <p align="center"><font style="font-weight: bold; font-size: 500%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            ILUSTRATOR, <br>
+            COMIC ARTIST, <br>
+            and WRITER.
+        </font></p>        
+    </div>
+    <div class="pas_foto">
+            <img class="img_biodata" width="400px" src="fitra novriadi-pas.jpg" alt="foto fitra">
+    </div>
+    <div class="biodata">
+        <p class="isi_biodata" align="center">
+            <font style="font-weight: bolder; font-size: 700%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                FITRA NOVRIADI
+            </font>
+        </p>
+        <p class="isi_biodata" align="center">
+            <font style="font-style: oblique; font-weight: normal; font-size: 100%; color: white; font-family: 'courier new', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            S.KOM., Ilustrator, Comic Artist, and writer.
+            </font>
+        </p><br><br>
+        <p class="isi_biodata" align="center">
+            <font style="font-style: normal; font-weight: bold; font-size: 150%; color: white; font-family: 'Courier New', Courier, monospace">
+                "I've been an artist since 2023, and for the last 10+ years I've freelanced as a book cover illustrator, comics artist, and writer."
+            </font>
+        </p><br><br>
+        <button>Hire Me</button>
+    </div>
+    <div class="foto_pendidikan">
+        <img class="img_pendidikan" src="ilustrasee.jpg" alt="">
+    </div>
+    <div class="pendidikan">
+        <p class="isi_pendidikan" align="left">
+            <font style="font-weight: bolder; font-size: 200%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                EDUCATION
+            </font>
+        </p><br>
+        <p class="isi_pendidikan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2021-2025 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Study at Nurdin Hamzah University
+            </font> 
+        </p><br><br>
+        <p class="isi_pendidikan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2026 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Story Writing Class by Raditya Dika
+            </font> 
+        </p><br><br>
+        <p class="isi_pendidikan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2028 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Intensive Program in Ilustrasee
+            </font> 
+        </p><br><br>        
+    </div>
+    <div class="pekerjaan">
+        <p class="isi_pekerjaan">
+            <font style="font-weight: bolder; font-size: 200%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                WORK
+            </font>
+        </p><br>
+        <p class="isi_pekerjaan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2025-Present 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Freelance Ilustrator
+            </font> 
+        </p><br><br>
+        <p class="isi_pekerjaan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2026-Present
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Writer
+            </font> 
+        </p><br><br>
+        <p class="isi_pekerjaan" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2027-2032 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Comic Artist at Bumi Langit 
+            </font> 
+        </p><br><br>
+    </div>  
+    <div class="foto_pekerjaan">
+        <img class="img_pekerjaan" src="pekerjaan.jpg" alt="">
+    </div>
+    <div class="foto_organisasi">
+        <img class="img_organisasi" src="pikr.jpg" alt="">
+    </div>     
+    <div class="organisasi">
+        <p class="isi_organisasi">
+            <font style="font-weight: bolder; font-size: 200%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                ORGANIZATION
+            </font>
+        </p> <br>
+        <p class="isi_organisasi" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2024-2025
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                as a social media designer at HIMASIF
+            </font> 
+        </p><br><br>
+        <p class="isi_organisasi" align="left">
+            <font style="font-weight: bold; font-size: 120%; color: rgb(195, 25, 201); font-family: 'Courier New', Courier, monospace">
+                2018-2019 
+            </font>
+            <br><br>
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                as public relations for PIK-R Sejahtera 
+            </font> 
+        </p><br><br>        
+    </div>    
+    <div class="kekurangan-kelebihan">
+        <p style="font-weight: bolder; font-size: 200%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" align="center">
+            <font >
+                STRENGTH & WEEKNESS
+            </font>
+        </p><br>
+        <p align="center">
+            <font style="font-weight: normal; font-size: 135%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                If I had to explain what strengths and weaknesses I have, then I would say that the strength I have is reasoning or what could be called logical thinking. Every time I always think and ask questions about things that don't have clear answers, even when sleeping and in my dreams I still keep thinking about scenarios and solutions to an event.    
+            </font>
+        </p>
+        <p align="center">
+            <font style="font-weight: normal; font-size: 135%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                As the saying goes, for every advantage there must be a disadvantage, so do I definitely have disadvantages. The weakness I have is that my energy quickly runs out when I am in a social environment for too long. When social matters are finished I will immediately go to a quiet place to restore energy.   
+            </font>
+        </p>
+        <p align="center">
+            <font style="font-weight: normal; font-size: 135%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                My strengths and weaknesses complement each other. When I continuously think about finding solutions, my limited energy makes my brain work more relaxed so I can keep my thinking logical.     
+            </font>            
+        </p>
+    </div>
+    <div class="keahlian-sertifikasi">
+        <p style="font-weight: bolder; font-size: 200%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" align="center">
+            <font>
+                EXPERTISE & CERTIFICATION
+            </font>
+        </p><br>
+        <p align="center">
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                - Adobe Certified Expert (ACE)
+            </font> 
+        </p>
+        <p align="center">
+            <font style="font-weight: bold; font-size: 150%; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                - Certified Graphic Designer (CGD) 
+            </font> 
+        </p>        
+    </div>
+    <div class="footer">
+        <ul class="menu">
+            <li class="isimenu">
+                <a href="mailto:imajiramu@gmail.com">Email</a>
+            </li>
+            <li class="isimenu">
+                <a href="https://www.linkedin.com/in/fitra-novriadi-a7a05b295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedln</a>
+            </li>
+            <li class="isimenu">
+                <a href="https://github.com/FitraNovriadi">GitHub</a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="isimenu">
+                <a href="https://www.instagram.com/fitranvradi__/">Instagram</a>
+            </li>
+            <li class="isimenu">
+                <a href="https://www.youtube.com/channel/UCGLEksQVpiGOzQZ7rnuhkwQ">Youtube</a>
+            </li>
+        </ul><br><br>
+        <ul class="menu">
+            <li>copiright @Fitra Novriadi</li>
+        </ul>
+        <br><br><br>
+    </div>
+</div>
+</body>
+</html>
